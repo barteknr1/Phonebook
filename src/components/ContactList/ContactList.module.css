@@ -1,0 +1,42 @@
+.contactList {
+	display: grid;
+	grid-template-columns: repeat(3, 250px);
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+.contactElement {
+	font-size: 16px;
+	font-weight: 600;
+	color: rgb(163, 28, 248);
+	background-color: rgb(211, 200, 253);
+	border-radius: 15px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5px;
+	border: 1px solid;
+}
+.delete {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgb(163, 28, 248);
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 15px;
+	border: 2px solid rgb(163, 28, 248);
+	background-color: rgb(210, 197, 255);
+}
+.delete:hover {
+	background-color: rgb(163, 28, 248);
+	color: white;
+}
+.noContacts {
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 500;
+	color: rgb(163, 28, 248);
+}
