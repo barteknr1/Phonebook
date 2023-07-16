@@ -1,49 +1,49 @@
-@import-normalize; /* bring in normalize.css styles */
+@import "node_modules/modern-normalize/modern-normalize.css";
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(220, 220, 220);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgb(220, 220, 220);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 #root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 20px;
 }
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 h1 {
-  color: rgb(163, 28, 248);
-  font-size: 4rem;
+	color: rgb(163, 28, 248);
+	font-size: 4rem;
 }
 h2 {
-  color: rgb(163, 28, 248);
-  font-size: 3rem;
+	color: rgb(163, 28, 248);
+	font-size: 3rem;
 }
 h3 {
-  color: rgb(163, 28, 248);
+	color: rgb(163, 28, 248);
 }
 progress {
-  margin-top: 5px;
-  width: 100%;
-  height: 1.1rem;
+	margin-top: 5px;
+	width: 100%;
+	height: 1.1rem;
 }

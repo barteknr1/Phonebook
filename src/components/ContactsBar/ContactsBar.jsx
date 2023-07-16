@@ -1,4 +1,4 @@
-import { selectContacts, selectFilter } from "../../redux/selectors"
+import { selectContacts, selectFilter } from "../../redux/contacts/selectors"
 import { useSelector } from "react-redux";
 
 const ContactsBar = () => {
