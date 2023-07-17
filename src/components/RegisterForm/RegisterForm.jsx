@@ -4,6 +4,7 @@ import css from './RegisterForm.module.css'
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
+    
     const handleSubmit = e => {
         e.preventDefault();
         const form = e.currentTarget;
@@ -24,7 +25,7 @@ const RegisterForm = () => {
             </label>
             <label className={css.registerLabel}>
                 Email
-                <input className={css.registerInput} type="text" name="mail" />
+                <input className={css.registerInput} type="email" name="email" />
             </label>
             <label className={css.registerLabel}>
                 Password

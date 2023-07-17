@@ -21,11 +21,11 @@ const LoginForm = () => {
         <form className={css.loginForm} onSubmit={handleSubmit} autoComplete="off">
             <label className={css.loginLabel}>
                 Email
-                <input type="email" className={css.loginInput} />
+                <input type="email" name="email" className={css.loginInput} />
             </label>
             <label className={css.loginLabel}>
                 Password
-                <input type="password" className={css.loginInput} />
+                <input type="password" name="password" className={css.loginInput} />
             </label>
             <button type="submit">Log In</button>
         </form>
