@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from '../../redux/contacts/operations';
 import { selectError, selectIsLoading } from '../../redux/contacts/selectors';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Contacts = () => {
     const dispatch = useDispatch();
@@ -18,6 +19,11 @@ const Contacts = () => {
 
     return (
         <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Phonebook</title>
+                </Helmet>
+            </HelmetProvider>
             <h1>Phonebook</h1>
             <ContactForm />
             <h2>Contacts</h2>
