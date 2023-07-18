@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from '../../redux/contacts/operations';
 import { selectError, selectIsLoading } from '../../redux/contacts/selectors';
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import css from './Contacts.module.css'
 
 const Contacts = () => {
     const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const Contacts = () => {
     }, [dispatch]);
 
     return (
-        <>
+        <div className={css.contacts}>
             <HelmetProvider>
                 <Helmet>
                     <title>Phonebook</title>
@@ -33,7 +34,7 @@ const Contacts = () => {
                 <p>Loading contacts...</p>
             ) : (
                 < ContactList />)}
-        </>
+        </div>
     )
 }
 
